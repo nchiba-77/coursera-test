@@ -1,0 +1,15 @@
+<div>
+Hello your details:
+  <div  ng-show="info.completed">
+    Firstname: {{ info.user.firstname}} <br>
+    Lastname: {{ info.user.lastname}} <br>
+    Email: {{ info.user.email}} <br>
+    Phone: {{ info.user.phone }} <br>
+    Fav Dish {{ info.user.dish }}
+  </div>
+
+  <div ng-hide="info.completed">
+    <h1>You need to signup first. <a class="btn btn-default" ui-sref="public.sign">Signup now!</a></h1>
+</div>
+
+</div>
